@@ -10,7 +10,7 @@ pipeline {
     stage('Deploy Wiremock to k8s') {
       environment {
         K8S_CREDS = credentials('sa_k8s')  // A jenkins credentials (username/password) is expected in jenkins (craete it before running)
-        K8S_AUTH_HOST="<K8S CLUSTER URL>"
+        K8S_AUTH_HOST="https://192.168.200.128:6443"
       }
       steps {
         container('ansible') {  

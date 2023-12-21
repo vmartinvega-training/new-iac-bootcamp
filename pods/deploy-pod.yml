@@ -3,6 +3,6 @@ kind: Pod
 spec:
   containers:
     - name: ansible
-      image: docker.io/<DOCKER ACCOUNT>/bootcamp-ansible:latest
+      image: docker.io/vmartinvegatraining/bootcamp-ansible:latest
       command: ["tail", "-f", "/dev/null"]
       imagePullPolicy: IfNotPresent
