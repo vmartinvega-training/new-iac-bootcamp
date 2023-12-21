@@ -4,7 +4,7 @@
   connection: local
   vars:
     app_name: wiremock
-    app_image: docker.io/<DOCKER ACCOUNT>/bootcamp-wiremock:latest
+    app_image: docker.io/vmartinvegatraining/bootcamp-wiremock:latest
     app_port: 32100
     namespace_k8s: default
     replicas: 1
